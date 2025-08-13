@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  /* Add these lines: */
+  background: linear-gradient(270deg, #ff4d4d, #4caf50, #2196f3, #ff4d4d);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 10s ease infinite;
+}
+
+/* Keyframes for smooth color cycling */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  color: #555;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 130px;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Toast Styles */
+#toast {
+  visibility: hidden;
+  min-width: 280px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  padding: 16px 24px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 30px;               /* Position toast at the top center */
+  font-size: 1rem;
+  transform: translateX(-50%);
+  box-shadow: 0 8px 16px rgba(76, 175, 80, 0.4);
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  pointer-events: none;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  animation: slideInDown 0.5s ease forwards, fadeOut 0.5s ease 2.5s forwards;
+}
+
+/* Animations */
+@keyframes slideInDown {
+  from {
+    transform: translateX(-50%) translateY(-100%);
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
