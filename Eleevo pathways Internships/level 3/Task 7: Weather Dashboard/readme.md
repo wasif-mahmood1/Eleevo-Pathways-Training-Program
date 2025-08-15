@@ -40,5 +40,4 @@ It allows users to:
 
 ---
 
-## 📂 Project Structure
 
