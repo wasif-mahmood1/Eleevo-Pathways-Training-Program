@@ -1,113 +1,112 @@
-// Sample blog post data
 const blogPosts = [
-    {
-        id: 1,
-        title: "Building Modern Web Applications with React",
-        description: "Learn how to create scalable and maintainable web applications using React and modern development practices.",
-        image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&h=300&fit=crop",
-        category: "tech",
-        date: "2024-01-15",
-        author: "John Doe"
-    },
-    {
-        id: 2,
-        title: "Exploring the Hidden Gems of Southeast Asia",
-        description: "A journey through the most beautiful and lesser-known destinations in Southeast Asia that will take your breath away.",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop",
-        category: "travel",
-        date: "2024-01-12",
-        author: "Jane Smith"
-    },
-    {
-        id: 3,
-        title: "The Art of Italian Cooking: Authentic Pasta Recipes",
-        description: "Master the traditional techniques of Italian pasta making with these time-tested recipes from Nonna's kitchen.",
-        image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=500&h=300&fit=crop",
-        category: "food",
-        date: "2024-01-10",
-        author: "Marco Rossi"
-    },
-    {
-        id: 4,
-        title: "Understanding JavaScript Closures and Scope",
-        description: "Deep dive into one of JavaScript's most important concepts that every developer should master.",
-        image: "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=500&h=300&fit=crop",
-        category: "tech",
-        date: "2024-01-08",
-        author: "Sarah Wilson"
-    },
-    {
-        id: 5,
-        title: "Backpacking Through the Swiss Alps",
-        description: "An adventurous trek through the stunning landscapes of Switzerland with practical tips for fellow hikers.",
-        image: "https://images.unsplash.com/photo-1464822759844-d150ad6d1f39?w=500&h=300&fit=crop",
-        category: "travel",
-        date: "2024-01-05",
-        author: "Mike Adventure"
-    },
-    {
-        id: 6,
-        title: "Mastering the Perfect Sourdough Bread",
-        description: "Learn the secrets of creating artisanal sourdough bread at home with this comprehensive guide.",
-        image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=500&h=300&fit=crop",
-        category: "food",
-        date: "2024-01-03",
-        author: "Emily Baker"
-    },
-    {
-        id: 7,
-        title: "Introduction to Machine Learning with Python",
-        description: "Get started with machine learning using Python and popular libraries like scikit-learn and pandas.",
-        image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop",
-        category: "tech",
-        date: "2024-01-01",
-        author: "Dr. Alex Chen"
-    },
-    {
-        id: 8,
-        title: "Solo Travel Safety Tips for Women",
-        description: "Essential safety advice and practical tips for women embarking on solo adventures around the world.",
-        image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=300&fit=crop",
-        category: "travel",
-        date: "2023-12-28",
-        author: "Lisa Wanderer"
-    },
-    {
-        id: 9,
-        title: "Farm-to-Table: Growing Your Own Herbs",
-        description: "Start your own herb garden and discover how fresh ingredients can transform your cooking.",
-        image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&h=300&fit=crop",
-        category: "food",
-        date: "2023-12-25",
-        author: "Green Thumb Gary"
-    },
-    {
-        id: 10,
-        title: "CSS Grid vs Flexbox: When to Use Which",
-        description: "A comprehensive comparison of CSS layout methods to help you choose the right tool for your projects.",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop",
-        category: "tech",
-        date: "2023-12-22",
-        author: "CSS Master"
-    },
-    {
-        id: 11,
-        title: "Digital Nomad Life in Bali",
-        description: "Everything you need to know about working remotely from the beautiful island of Bali.",
-        image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=500&h=300&fit=crop",
-        category: "travel",
-        date: "2023-12-20",
-        author: "Remote Worker"
-    },
-    {
-        id: 12,
-        title: "Healthy Meal Prep for Busy Professionals",
-        description: "Time-saving meal preparation strategies that will help you eat well even with a hectic schedule.",
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=300&fit=crop",
-        category: "food",
-        date: "2023-12-18",
-        author: "Nutrition Pro"
-    }
+  {
+    id: 1,
+    title: "The Rise of Smartwear: When Fashion Meets Tech",
+    description: "Explore how smart fabrics and wearable tech are revolutionizing style and function.",
+    image: "virtual reality tech.webp",
+    category: "fashion",
+    date: "2025-08-12",
+    author: "Wasif Mahmood"
+  },
+  {
+    id: 2,
+    title: "Top 10 Performance Sneakers for 2025",
+    description: "Best high-performance sneakers for running, training, and daily wear.",
+    image: "sports sneaker.jpeg",
+    category: "sports",
+    date: "2025-08-10",
+    author: "Nasir Farid"
+  },
+  {
+    id: 3,
+    title: "How AI Is Changing the Game in Professional Sports",
+    description: "From player analytics to fan experiences, AI is transforming sports.",
+    image: "tech how ai is changing game.jpeg",
+    category: "tech",
+    date: "2025-08-08",
+    author: "Zeeshan Khan"
+  },
+  {
+    id: 4,
+    title: "Streetwear Trends Dominating Fall 2025",
+    description: "A look at the streetwear essentials taking over the fashion scene.",
+    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f.jpg",
+    category: "fashion",
+    date: "2025-08-06",
+    author: "Abdullah Tauseef"
+  },
+  {
+    id: 5,
+    title: "Virtual Reality Fitness: Working Out in the Metaverse",
+    description: "Discover how VR workouts are transforming fitness at home.",
+    image: "virtual reality tech.webp",
+    category: "tech",
+    date: "2025-08-03",
+    author: "Omar Abdullah"
+  },
+  {
+    id: 6,
+    title: "The Science Behind Recovery: Sports Tech You Need",
+    description: "Latest recovery tools and technologies for faster and smarter training.",
+    image: "tech how ai is changing game.jpeg",
+    category: "sports",
+    date: "2025-07-29",
+    author: "Shawal Nasir"
+  },
+  {
+    id: 7,
+    title: "Sustainable Fashion Tech: Innovations Redefining the Industry",
+    description: "Emerging tech enabling sustainable practices in high fashion.",
+    image: "tech.png",
+    category: "fashion",
+    date: "2025-07-27",
+    author: "Obaid Ullah Zahoor"
+  },
+  {
+    id: 8,
+    title: "Smart Stadiums: The Future of Live Sports Experiences",
+    description: "How tech enhances live games—from AI ticketing to real-time stats.",
+    image: "s1.jpeg",
+    category: "tech",
+    date: "2025-07-24",
+    author: "Muhammad Hafeez"
+  },
+  {
+    id: 9,
+    title: "Athleisure 3.0: Blurring the Line Between Gym and Street",
+    description: "Athleisure looks that combine comfort, performance, and style.",
+    image: "f1.jpg",
+    category: "fashion",
+    date: "2025-07-22",
+    author: "Muhammad Ibrahim"
+  },
+  {
+    id: 10,
+    title: "Top Fitness Apps of 2025 Reviewed",
+    description: "AI coaching, real-time tracking—reviewing the year’s best fitness apps.",
+    image: "f1.jpg",
+    category: "tech",
+    date: "2025-07-20",
+    author: "Kashif Mushtaq"
+  },
+  {
+    id: 11,
+    title: "From Courtside to Catwalk: Basketball’s Influence on Fashion",
+    description: "How basketball’s cultural crossover continues to shape fashion.",
+    image: "fashion.jpg",
+    category: "fashion",
+    date: "2025-07-17",
+    author: "Haseeb Anees"
+  },
+  {
+    id: 12,
+    title: "Wearables for Athletes: The Best in 2025",
+    description: "Smartwatches, smart rings, and gear that pro athletes swear by.",
+    image: "sports.webp",
+    category: "sports",
+    date: "2025-07-14",
+    author: "Bilal Shakeel"
+  }
 ];
 
 // Configuration
@@ -202,10 +201,17 @@ function renderPosts() {
 // Create individual post card HTML
 function createPostCard(post) {
     const formattedDate = formatDate(post.date);
-    
+    const fallbackImage = 'https://via.placeholder.com/500x300/e9ecef/6c757d?text=Image+Not+Found';
+
     return `
         <article class="post-card">
-            <img src="${post.image}" alt="${post.title}" class="post-image" loading="lazy">
+            <img 
+                src="${post.image}" 
+                alt="${post.title}" 
+                class="post-image" 
+                loading="lazy" 
+                onerror="this.onerror=null;this.src='${fallbackImage}'"
+            >
             <div class="post-content">
                 <span class="post-category ${post.category}">${post.category}</span>
                 <h2 class="post-title">${post.title}</h2>
@@ -224,6 +230,7 @@ function createPostCard(post) {
         </article>
     `;
 }
+
 
 // Format date for display
 function formatDate(dateString) {
