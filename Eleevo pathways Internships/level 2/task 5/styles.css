@@ -1,0 +1,300 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #333333;
+  transition: background 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ======= Dark Mode Styles ======= */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode #header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode footer#main-footer {
+  background-color: #f8f9fa; /* Keep footer light */
+  color: #333;
+}
+
+body.dark-mode .btn {
+  background-color: #f1c40f;
+  color: #121212;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #ffe84d;
+}
+
+body.dark-mode .price-box {
+  background-color: #1e1e1e;
+  border: 1px solid #555;
+}
+
+body.dark-mode .price-box h3 {
+  background-color: #2c2c2c;
+}
+
+body.dark-mode .feature {
+  background-color: transparent;
+}
+
+body.dark-mode input[type="email"] {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark-mode .nav-link {
+  color: #f0f0f0;
+}
+
+/* ======= Header ======= */
+#header {
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .site-title {
+  color: #f1f1f1;
+}
+
+#toggle-theme {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode #toggle-theme {
+  color: #f1f1f1;
+}
+
+
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+#toggle-theme {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* ======= Main Content ======= */
+#container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  flex: 1;
+}
+
+/* ======= Hero Section ======= */
+.hero {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+input[type="email"] {
+  padding: 0.5rem;
+  width: 300px;
+  max-width: 80%;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* ======= Buttons ======= */
+.btn {
+  background-color: #f1c40f;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0b90e;
+}
+
+/* ======= Features Section ======= */
+#features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.feature {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.feature i {
+  color: #ff8c00;
+  margin-top: 0.4rem;
+  min-width: 30px;
+}
+
+.feature div h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* ======= Pricing Section ======= */
+#pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.price-box {
+  background-color: #fafafa;
+  border: 2px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+  width: 280px;
+  transition: background 0.3s ease;
+}
+
+.price-box h3 {
+  background-color: #eee;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.price-box h2 {
+  margin: 1rem 0;
+}
+
+.price-box p {
+  margin-bottom: 1.2rem;
+}
+
+.price-box .btn {
+  margin-top: 1rem;
+}
+
+/* ======= Footer ======= */
+footer#main-footer {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 1;
+  color: #333;
+}
+
+footer a {
+  margin: 0 0.8rem;
+  font-weight: bold;
+}
+
+.my-name {
+  margin: 1rem 0;
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  input[type="email"] {
+    width: 100%;
+  }
+}
