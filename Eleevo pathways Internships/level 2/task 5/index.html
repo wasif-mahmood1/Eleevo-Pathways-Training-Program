@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/9650a62e47.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Tech SaaS Landing Page</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+      <h1 class="site-title">Tech solutions</h1>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li>
+          <button id="toggle-theme" aria-label="Toggle dark mode">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main id="container">
+<section class="message-box hero">
+  <h1>Launch Smarter with TechBoost 🚀</h1>
+  <p>All-in-one SaaS toolkit to supercharge your startup. Simple, powerful, scalable.</p>
+  <form id="form" action="mailto:wasifmahmood1@gmail.com" method="POST" enctype="text/plain">
+    <input id="email" type="email" name="email" placeholder="Enter your email" required />
+    <input id="submit" type="submit" value="Get Started Free" class="btn" />
+  </form>
+</section>
+
+
+    <section id="features">
+      <div class="feature">
+        <i class="fas fa-bolt fa-2x"></i>
+        <div>
+          <h2>Blazing Fast Setup</h2>
+          <p>Get started in minutes with zero code deployment and smart onboarding.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-lock fa-2x"></i>
+        <div>
+          <h2>Enterprise-Grade Security</h2>
+          <p>Secure your data with top-tier encryption and compliance tools.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fas fa-chart-line fa-2x"></i>
+        <div>
+          <h2>Real-time Analytics</h2>
+          <p>Track performance, gain insights, and optimize with actionable data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="price-box">
+        <h3>Basic</h3>
+        <h2>$29/mo</h2>
+        <p>Essential tools for startups & solopreneurs.</p>
+        <a href="#" class="btn">Start Basic</a>
+      </div>
+      <div class="price-box">
+        <h3>Pro</h3>
+        <h2>$59/mo</h2>
+        <p>For growing teams with advanced needs.</p>
+        <a href="#" class="btn">Go Pro</a>
+      </div>
+      <div class="price-box">
+        <h3>Enterprise</h3>
+        <h2>Contact Us</h2>
+        <p>Custom solutions and white-glove onboarding.</p>
+        <a href="#" class="btn">Talk to Sales</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer" id="contact">
+    <div>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+    <p class="my-name">Page crafted with ❤️ by <a href="https://github.com/wasif-mahmood1/Eleevo-Pathways-Training-Program" target="_blank">wasif mahmood</a></p>
+    <p>&copy; 2025 Wasif mahmood</p>
+  </footer>
+
+<script>
+  const toggleButton = document.getElementById("toggle-theme");
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Optional: Toggle the icon
+    if (document.body.classList.contains("dark-mode")) {
+      toggleButton.textContent = "☀️"; // Sun for light mode
+    } else {
+      toggleButton.textContent = "🌙"; // Moon for dark mode
+    }
+  });
+</script>
+
+</body>
+
+</html>
